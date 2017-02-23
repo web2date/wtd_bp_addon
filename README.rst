@@ -8,6 +8,8 @@ theme for TYPO3, based on the Bootstrap CSS Framework.
 The goal of this addon package is to give an an example of a sitepackage for own adjustments and
 a 3rd level in main menu.
 
+.. image:: /Resources/Public/Images/3rd-level-menu.png
+
 Minimal Dependencies
 ====================
 
