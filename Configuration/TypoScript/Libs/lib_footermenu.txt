@@ -1,0 +1,28 @@
+lib.footermenu = COA
+lib.footermenu {
+    required = 1
+    10 = HMENU
+    10 {
+        special = list
+        special.value = 73,2,17,130
+        includeNotInMenu = 1
+        1 = TMENU
+        1 {
+            noBlur = 1
+            target = _self
+            wrap = <ul class="nav navbar-nav navbar-footer">|</ul>
+            NO = 1
+            NO {
+                stdWrap.field = title
+                ATagTitle.field = nav_title // title
+                wrapItemAndSub = <li>|</li>
+            }
+            CUR = 1
+            CUR {
+                stdWrap.field = title
+                #doNotLinkIt = 1
+                wrapItemAndSub = <li class="active">|</li>
+            }
+        }
+    }
+}

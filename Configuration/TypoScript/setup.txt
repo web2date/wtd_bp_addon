@@ -1,0 +1,45 @@
+
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:wtd_bp_addon/Configuration/TypoScript/Libs/lib_footermenu.txt">
+config.admPanel = 0
+config {
+    sys_language_uid                    = 0
+    language                            = de
+    locale_all                          = de_DE.UTF-8
+    htmlTag_setParams                   = lang="de" dir="ltr" class="no-js"
+}
+config {
+    spamProtectEmailAddresses = 3
+    spamProtectEmailAddresses_atSubst = (at)
+}
+page.shortcutIcon = EXT:wtd_bp_addon/Resources/Public/Images/favicon.ico
+page.includeCSS.theme2 = EXT:wtd_bp_addon/Resources/Public/Css/styles.less
+#page.includeCSS.theme_add = EXT:wtd_bp_addon/Resources/Public/Css/styles_add.css
+page.includeJSFooter.wtdmain = EXT:wtd_bp_addon/Resources/Public/JavaScript/wtd-main.js
+#page.headerData.20 = TEXT
+#page.headerData.20.value = <meta name="google-site-verification" content="WlHwyMphZAOefTw37uKTCWDRGjaYh7i77WEFTDT1GVA" />
+#page.headerData.30 = TEXT
+#page.headerData.30.value = <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+#page.headerData.40 = TEXT
+#page.headerData.40.value (
+#<script>
+#  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+#  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+#  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+#  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+#
+#  ga('create', 'UA-490615-6', 'auto');
+#  ga('send', 'pageview');
+#
+#</script>
+#)
+
+page.10.variables {
+    logoFile2 = TEXT
+    logoFile2.value = {$page.logo2.file}
+    logoHeight2 = TEXT
+    logoHeight2.value = {$page.logo2.height}
+    logoWidth2 = TEXT
+    logoWidth2.value = {$page.logo2.width}
+}
+
+page.10.dataProcessing.10.levels = 3

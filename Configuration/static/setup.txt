@@ -1,0 +1,4 @@
+##################################################
+#   completely disable caching for the project
+#
+	config.no_cache  = 1

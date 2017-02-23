@@ -1,0 +1,9 @@
+TCEFORM.tt_content.layout.types.uploads.removeItems = 3
+
+## Layout-Felder Ueberschriften umbenennen
+#TCEFORM.tt_content.header_layout.removeItems = 0,1
+TCEFORM.tt_content.header_layout.altLabels.1 = H1 Haupttitel (1x)
+TCEFORM.tt_content.header_layout.altLabels.2 = H2 Untertitel
+TCEFORM.tt_content.header_layout.altLabels.3 = H3 Nebentitel
+TCEFORM.tt_content.header_layout.altLabels.4 = H4 Spalte Rechts
+TCEFORM.tt_content.header_layout.altLabels.5 = H5 Fußzeilenbereich

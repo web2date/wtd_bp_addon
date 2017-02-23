@@ -1,0 +1,4 @@
+page.includeCSS {
+   file1= EXT:wtd_bp_addon/Resources/Public/Css/styles.css
+}
+

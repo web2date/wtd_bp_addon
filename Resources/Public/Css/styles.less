@@ -1,0 +1,233 @@
+// Color variables (appears count calculates by raw css)
+@brand-primary: #663300;
+@beige1: #ffffcc;
+@beige2: #ffffdd;
+@white: #ffffff;
+@lightbrown: #663300;
+@darkbrown: #381c00;
+@border: #d2b48c;
+@text-color: #4f2700;
+
+// RTE
+.darkred {
+  color: #800000;
+}
+.red {
+  color: #FF0000;
+}
+.black {
+  color: #000000;
+}
+.brown {
+    color:#663300;
+}
+
+/* Two frame examples taken from the example CSS file of CSS Styled Content extension and applied to p and table block elements.*/
+p.csc-frame-frame1 { background-color: #EDEBF1; padding: 2px 4px 2px 4px; border: 1px solid #333333; }
+p.csc-frame-frame2 { background-color: #F5FFAA; padding: 2px 4px 2px 4px; border: 1px solid #333333; }
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+//
+header.navbar {
+  background-color: @beige1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: @lightbrown;
+}
+.navbar-default {
+  border-bottom-color: @border;
+}
+.navbar-toggle:before {
+  content: "Menü";
+  left: -50px;
+  top:4px;
+  position: absolute;
+  width: 50px;
+  color: @lightbrown;
+  font-weight: 600;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: @lightbrown;
+}
+.dropdown-menu {
+  color: @lightbrown;
+}
+.dropdown-submenu {
+  position: relative;
+  .open>.dropdown-menu {
+    display: block;
+    color: @lightbrown;
+  }
+  .open>a {
+    &:after {
+      border-left-color: #ffffff;
+    }
+  }
+  > a:hover,
+  > a:focus {
+    color: @lightbrown;
+  }
+}
+li.dropdown-submenu.open > a{
+  color: @lightbrown!important;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  /*
+  -moz-border-radius: 0 6px 6px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;*/
+  left: 100%;
+  margin-left: -1px;
+  margin-top: -6px;
+  top: 0;
+}
+@media (min-width: 992px) {
+  li.dropdown-submenu > a > .caret {
+    position: absolute !important;
+    right: 5px !important;
+    top: 50% !important;
+    margin-top: -3px !important;
+    transform: rotate(270deg) !important;
+  }
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  -moz-border-radius: 6px 0 6px 6px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+  left: -100%;
+  margin-left: 10px;
+}
+
+@media (max-width: 991px) {
+  .navbar-default .navbar-nav .open > a,
+  .navbar-default .navbar-nav .open > a:hover,
+  .navbar-default .navbar-nav .open > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li.dropdown-submenu > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > li.dropdown-submenu > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li.dropdown-submenu > a:focus {
+    color: @lightbrown!important;
+  }
+  li.dropdown-submenu> a > .caret {
+    position: absolute!important;
+    right: 20px!important;
+    top: 50%!important;
+    margin-top: -3px!important;
+    transform: rotate(0deg)!important;
+  }
+  li.dropdown-submenu.open> a > .caret {
+    position: absolute!important;
+    right: 20px!important;
+    top: 25%!important;
+    margin-top: -3px!important;
+    transform: rotate(180deg)!important;
+  }
+}
+
+.nav.nav-sidebar li a {
+  color: @text-color;
+  border-color: @border;
+}
+.frame.well {
+    background-color: @beige2;
+    border: 1px solid @border;
+    H4 {
+      color: @lightbrown;
+    }
+  }
+
+.breadcrumb-section, .breadcrumb{
+  background-color: @beige2;
+  border-bottom-color: @border;
+}
+li.csc-form-element {
+  list-style-type: none;
+  margin-bottom: 5px;
+  label em {
+    display: inline;
+  }
+}
+.footer-section {
+  background: @beige1;
+  border-top: 1px solid @border;
+  color: @darkbrown;
+  /*margin-top: 20px;*/
+  padding: 20px 0 30px;
+  a {
+    color: @lightbrown;
+    &:hover {
+      color: @beige2;
+    }
+  }
+  ul.csc-menu {
+    list-style: none;
+    padding-left: 0px;
+  }
+  h5 {
+    text-transform: uppercase;
+  }
+}
+.meta-section {
+  background-color: @darkbrown;
+  .copyright{
+    text-align: right;
+  }
+  .footermenu {
+    text-align: left;
+  }
+  @media (max-width: @grid-float-breakpoint-max){
+    .copyright {
+      text-align: center;
+    }
+    .footermenu {
+      text-align: center;
+    }
+  }
+  ul {
+    margin: 10px 0;
+    li {
+      a {
+        color: @white;
+        font-weight: 500;
+        padding-bottom: 0;
+        padding-top: 0;
+        &:hover {
+          background: none;
+          color: @beige1;
+        }
+        &:focus {
+          background: none;
+          color: @white;
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  p {
+    margin: 10px 0;
+  }
+  .active {
+    a {
+      color: @beige1;
+    }
+  }
+}

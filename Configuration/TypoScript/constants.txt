@@ -1,0 +1,16 @@
+# Standard-Ueberschriften als H2
+content.defaultHeaderType = 2
+
+page.fluidtemplate.layoutRootPath = EXT:wtd_bp_addon/Resources/Private/Layouts/Page/
+page.fluidtemplate.partialRootPath = EXT:wtd_bp_addon/Resources/Private/Partials/Page/
+page.fluidtemplate.templateRootPath = EXT:wtd_bp_addon/Resources/Private/Templates/Page/
+page {
+    logo {
+        # cat=bootstrap package: basic/110/file; type=string; label=Logo: Leave blank to use website title from template instead
+        file = EXT:wtd_bp_addon/Resources/Public/Images/logo-web-hd.png
+        # cat=bootstrap package: basic/110/height; type=int+; label=Height: The image will not be resized!
+        height = 50
+        # cat=bootstrap package: basic/110/width; type=int+; label=Width: The image will not be resized!
+        width = 250
+    }
+}

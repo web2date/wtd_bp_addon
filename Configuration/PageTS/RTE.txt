@@ -1,0 +1,41 @@
+##Globale Klassen aktivieren
+RTE.default.buttons.textstyle.showTagFreeClasses = 1
+
+RTE.default{
+    contentCSS = typo3conf/ext/wtd_bp_addon/Resources/Public/Css/rte.css
+    proc.allowedClasses := addToList(darkred,red,black,brown,csc-frame-frame1, csc-frame-frame2)
+    buttons{
+    textstyle.tags.span.allowedClasses := addToList(darkred,red,black,brown)
+    blockstyle.tags.div.allowedClasses := addToList(csc-frame-frame1, csc-frame-frame2)
+    }
+    proc.entryHTMLparser_db {
+    tags {
+        p.fixAttrib.class.list      = , lead, text-left, text-center, text-right, text-justify, csc-frame-frame1, csc-frame-frame2
+        }
+    }
+}
+
+RTE.classes.darkred {
+             name = Dunkelrot
+             value = color: #800000;
+        }
+RTE.classes.red {
+             name = Rot
+             value = color: #FF0000;
+        }
+RTE.classes.black {
+             name = Schwarz
+             value = color: #000000;
+        }
+RTE.classes.brown{
+             name = Braun
+             value = color: #663300;
+        }
+RTE.classes.csc-frame-frame1 {
+             name = graue Box
+             value = background-color: #EDEBF1; border: 1px solid #333333;
+        }
+RTE.classes.csc-frame-frame2 {
+             name = gelbe Box
+             value = background-color: #F5FFAA; border: 1px solid #333333;
+        }
