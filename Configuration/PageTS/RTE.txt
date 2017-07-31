@@ -7,6 +7,7 @@ RTE.default{
     buttons{
     textstyle.tags.span.allowedClasses := addToList(darkred,red,black,brown)
     blockstyle.tags.div.allowedClasses := addToList(csc-frame-frame1, csc-frame-frame2)
+    blockstyle.tags.p.allowedClasses := addToList(csc-frame-frame1, csc-frame-frame2)
     }
     proc.entryHTMLparser_db {
     tags {
